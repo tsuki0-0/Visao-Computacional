@@ -1,3 +1,4 @@
+# Bibliotecas Importadas
 import os
 from PIL import Image
 import numpy as np
@@ -68,6 +69,8 @@ with st.sidebar:
     db_url_input = st.text_input("DATABASE_URL (Neon.tech)", type="password", help="Insira a string de conexão fornecida pelo Neon.tech.")
     if db_url_input:
         os.environ["DATABASE_URL"] = db_url_input
+        # Inicializa a tabela dinamicamente caso a URL seja inserida via barra lateral
+        init_db()
     
     st.markdown("---")
     st.markdown("**Modelo Ativo:** `YOLOv8n-seg`")
