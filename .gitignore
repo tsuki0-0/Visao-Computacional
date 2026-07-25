@@ -10,7 +10,6 @@ __pycache__/
 *$py.class
 
 # Pesos do YOLO (modelos baixados automaticamente)
-# Remova esta linha se quiser versionar o arquivo .pt no repositório
 *.pt
 
 # Arquivos gerados pelo sistema operacional
